@@ -1,0 +1,240 @@
+@charset "UTF-8";
+html{scroll-behavior:smooth}
+
+
+body {
+margin: 0;
+font-family: 'Arial', sans-serif;
+background: linear-gradient(to bottom, white, #ffea00a1);
+padding: 0;
+width: 100%; 
+}
+
+h1.greetings {
+  margin: 5%;
+}
+
+.site-header {
+display: grid;
+grid-template-columns: 1fr auto 1fr; /* Uma coluna para o logotipo, outra para os links de navegação, e outra para o botão de login */
+align-items: center;
+padding: 0.5%;
+background-color: #424242;
+color: #fff;
+}
+
+.logo {
+font-size: 1.5em;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 1vw;
+}
+
+.nav-links {
+display: grid;
+grid-template-columns: repeat(4, auto); /* Quatro colunas para os links de navegação */
+gap: 4vw;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+}
+
+.login-button {
+justify-self: end; /* Alinha o botão de login à direita */
+cursor: pointer;
+margin-right: 5%;
+}
+
+.site-footer {
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 3px solid black;
+  margin: 1px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16vw;
+  height: 8.5vh;
+}
+
+.social-icon {
+font-size: 1.3rem;
+color: black;
+text-decoration: none;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+height: 6.5vh;
+}
+
+
+.social-icon:hover {
+  color: darkcyan;
+}
+
+.arrow-top {
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  
+  .arrow-top img{
+    opacity:1;
+    transition: 1s ease;
+    }
+    
+    .arrow-top img:hover{
+    opacity:0.5;
+    transition: 1s ease;
+    }
+  
+    a.arrow {
+      display: flex;
+      height: 7vh;
+      margin: 4% 4% 2% 0%;
+  }
+
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 5%;
+    margin: 7% 23% 4% 23%;
+    border-radius: 1rem;
+}
+
+/* Estilo para o breadcrumb */
+.breadcrumb {
+    list-style: none;
+    padding: 2%;  
+    margin: 0;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.breadcrumb-item:last-child {
+    font-weight: bold; /* O último item pode ser destacado de alguma forma, como torná-lo em negrito */
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo opcional para a seta separadora entre os itens do breadcrumb */
+.breadcrumb-item:not(:last-child)::after {
+    content: "›";
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #666;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+}
+
+.input2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+}
+
+
+.input3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+}
+
+
+.input4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+}
+
+.input5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+}
+
+.input6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+}
+
+
+.input7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 4%;
+    margin: 7% 23% 4% 23%;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+}
+
+form.user-infoForm {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    align-items: center;
+}
+
+.coluna1 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.coluna2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
+}
+
+.coluna3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

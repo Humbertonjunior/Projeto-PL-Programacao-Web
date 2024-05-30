@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, white, #ffea00a1);
+    height: 130vh;
+  }
+
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    padding: 0.5%;
+    background-color: #424242;
+    color: #fff;
+  }
+
+  .site-footer {
+    text-align: center;
+    flex-direction: row;
+    height: 21vh;
+  }
+  
+  
+.social-icons {
+  display: flex;
+  gap: 10vw;
+  height: 8.5vh;
+}
+
+.social-icon {
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 6.5vh;
+}
+
+
+.social-icon:hover {
+    color: #ffea00; 
+}
+
+.logo {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    gap: 4vw;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .login-button {
+    justify-self: end;
+    cursor: pointer;
+    margin-right: 5%;
+    width: 60px;
+  }
+
+  .borda {
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: 10vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 45px;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+  
+  .campo-container {
+    width: calc(50% - 30px);
+    margin: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .campo-endereco{
+    width: calc(100% - 5px);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 50px;
+  }
+  
+  .placa,
+  .modelo,
+  .proprietario {
+    width: calc(55% - 5px);
+    margin: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 50px;
+  }
+
+
+
+
+  .campo-tipo,
+.campo-departamento {
+  width: calc(55% - 5px);
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+  input[type="date"] {
+    width: calc(40% - 16px);
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    
+  }
+  .campo-descricao{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+  }
+  
+  .botao-registrar {
+    padding: 14px 28px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .anexar {
+   
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-right: 40%;
+  }
+ 
+
+
+
+.dropdown {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-end; 
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(70% + 5px);
+  right: 0;
+  background-color: #424242;
+  min-width: 100px;
+  box-shadow: 0px 20px 10px 0px rgba(255, 254, 190, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown .dropdown-content select {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #424242;
+  color: #fff;
+}
+
+.dropdown .dropdown-content select option {
+  background-color: #424242;
+  color: #fff;
+}
+
+.profile-image {
+  margin-left: 10px;
+}

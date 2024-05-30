@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL</title>
+    <link rel="icon" type="image/x-icon" href="static/imagens/loguinho.ico">
+    <link rel="stylesheet" href="{{ url_for('ocorrencia_css', filename='registrar_ocorrencia.css') }}">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo" ><a href="index.html"><img src="static/imagens/logo.png" style="height: 7vh;"></a></div>
+        <nav class="nav-links">
+            <a href="#">Registrar Ocorrência</a>
+            <a href="listar-ocorrencia.html">Listar Ocorrências</a>
+            <a href="#">Acompanhar Ocorrências</a>
+            <a href="#">Sobre Nós</a>
+        </nav>
+        <div class="dropdown">
+            <div class="dropdown-content">
+              <select id="menuOptions" onchange="location = this.value;">
+                <option value="" selected disabled>Escolha uma opção</option>
+                <option value="profie.html">Perfil</option>
+                <option value="login.html">Login</option>
+                <option value="registrar.html">Inscrever-se</option>
+                <option value="index.html">Sair</option>
+              </select>
+            </div>
+            <div class="profile-image">
+              <img src="static/imagens/image-removebg-preview.png" style="height: 7vh;">
+            </div>
+          </div>
+
+    </div>
+    </header>
+
+    <main>
+      <center>
+        <h2>Registrar Ocorrência</h2>
+        <form method="POST">
+          <div class="borda">
+            <div class="campo-container">
+              <label>Data da Ocorrência:</label><br>
+              <input type="date" name="data_ocorrencia" class="campo-data">
+            </div>
+            <div class="campo-container">
+              <label>Endereço da Ocorrência:</label><br>
+              <input type="text" name="endereco_ocorrencia" class="campo-endereco">
+            </div>
+            <div class="campo-container">
+              <label>Tipo:</label><br>
+              <select name="tipo" class="campo-tipo">
+                {% for tipo in lstTipo %}
+                <option value="{{ tipo.id_tipo }}">{{ tipo.nome_tipo }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="campo-container">
+              <label>Departamento:</label><br>
+              <select name="departamento" class="campo-departamento">
+                {% for depto in departamentos %}
+                <option value="{{ depto[0] }}"></option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="campo-container">
+              <label>Placa do veículo:</label><br>
+              <input type="text" name="placa_veiculo" class="placa">
+            </div>
+            <div class="campo-container">
+              <label>Modelo do veículo:</label><br>
+              <input type="text" name="modelo_veiculo" class="modelo">
+            </div>
+            <div class="campo-container">
+              <label>Proprietário do veículo:</label><br>
+              <input type="text" name="proprietario_veiculo" class="proprietario">
+            </div>
+            <div class="campo-container descricao-container">
+              <label>Descrição da Ocorrência:</label><br>
+              <textarea name="message" class="campo-descricao" style="width:100%; height:150px;"></textarea>
+            </div>
+            <div class="anexar">
+              <label class="nm-arquivo">Anexar Arquivo:</label><br>
+              <input class="file" type="file" name="anexo_ocorrencia">
+            </div>
+            <div class="botao-container">
+              <input type="submit" value="Registrar" class="botao-registrar">
+            </div>
+          </div>
+        </form>
+      </center>
+    </main>
+
+
+
+      <footer class="site-footer"><br><br>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/twttr_logo.png" ><p>Twitter</p></a>
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/insta_logo.png"><p>Instagram</p></i></a>
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/facebook_logo.png"><p>Facebook</p></a>
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/gitHub.png"><p>GitHub</p></a>
+      </footer>
+      <h6>Direitos autorais © a ninguém que se interessaria</h6>
+<script src="registrar_ocorrencia.js"></script>
+</body>
+</html>

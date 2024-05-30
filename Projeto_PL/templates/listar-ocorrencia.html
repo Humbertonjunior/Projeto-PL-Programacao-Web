@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL</title>
+    <link rel="icon" type="image/x-icon" href="imagens/loguinho.ico">
+    <link rel="stylesheet" href="{{ url_for('lista_ocorrencia_css', filename='listar-ocorrencia.css') }}">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo" ><a href="index.html"><img src="static/imagens/logo.png" style="height: 7vh;"></a></div>
+        <nav class="nav-links">
+            <a href="registrar_ocorrencia.html">Registrar Ocorrência</a>
+            <a href="listar-ocorrencia.html">Listar Ocorrências</a>
+            <a href="#">Acompanhar Ocorrências</a>
+            <a href="#">Sobre Nós</a>
+        </nav>
+        <div class="dropdown">
+            <div class="dropdown-content">
+              <select id="menuOptions" onchange="location = this.value;">
+                <option value="" selected disabled>Escolha uma opção</option>
+                <option value="perfil">Perfil</option>
+                <option value="pagina_de_login.html">Login</option>
+                <option value="Registrar.html">Inscrever-se</option>
+                <option value="sair">Sair</option>
+              </select>
+            </div>
+            <div class="profile-image">
+              <img src="static/imagens/image-removebg-preview.png" style="height: 7vh;">
+            </div>
+          </div>
+          <div class="grafico">
+            <script  src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+          </div>
+
+          
+    </header>
+
+    <main>
+        <center>
+        <h2>Lista de Ocorrências</h2>
+        <div class="borda">
+          
+        <table>
+            <tr>
+              <th>Ocorrência Respondida</th>
+              <th>Número</th>
+              <th style="width: 40%;">Assunto</th>
+            </tr>
+            <tr>
+              <td>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </td>
+              <td>12345</td>
+              <td>Assunto da Ocorrência</td>
+            </tr>
+            <tr>
+              <td>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </td>
+              <td>67890</td>
+              <td>Outro Assunto</td>
+            </tr>
+          </table> 
+
+
+
+
+<div id="myPlot" class="grafico" style="width:100%;max-width:700px"></div>
+
+<script>
+  const xArray = ["Respondidas", "Não respondidas"];
+const yArray = [75, 25];
+
+const layout = {title:""};
+
+const data = [{labels:xArray, values:yArray, type:"pie"}];
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+</div>
+</center>
+</main><br><br>
+<footer class="site-footer"><br><br>
+  <div class="social-icons">
+      <a href="#" target="_blank" class="social-icon"><img src="static/imagens/twttr_logo.png" ><p>Twitter</p></a>
+      <a href="#" target="_blank" class="social-icon"><img src="static/imagens/insta_logo.png"><p>Instagram</p></i></a>
+      <a href="#" target="_blank" class="social-icon"><img src="static/imagens/facebook_logo.png"><p>Facebook</p></a>
+      <a href="#" target="_blank" class="social-icon"><img src="static/imagens/gitHub.png"><p>GitHub</p></a>
+</footer>
+<h6>Direitos autorais © a ninguém que se interessaria</h6>
+   
+<script src="static/javascript/listar-ocorrencia.js"></script>
+</body>
+</html>

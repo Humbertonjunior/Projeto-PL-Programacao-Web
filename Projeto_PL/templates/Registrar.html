@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL</title>
+    <link rel="icon" type="image/x-icon" href="imagens/loguinho.ico">
+    <link rel="stylesheet" href="{{ url_for('Registrar_css', filename='Registrar.css') }}">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo"><a href="index.html"><img src="static/imagens/logo.png" style="height: 7vh;"></a></div>
+        <nav class="nav-links">
+            <a href="registrar_ocorrencia.html">Registrar Ocorrência</a>
+            <a href="#">Listar Ocorrências</a>
+            <a href="#">Acompanhar Ocorrências</a>
+            <a href="#">Sobre Nós</a>
+        </nav>
+        <div class="dropdown">
+            <div class="dropdown-content">
+              <select id="menuOptions" onchange="location = this.value;">
+                <option value="" selected disabled>Escolha uma opção</option>
+                <option value="pagina_de_login.html">Login</option>
+                <option value="Registrar.html">Inscrever-se</option>
+                <option value="index.html">Sair</option>
+              </select>
+            </div>
+        <div class="login-button"><img src="imagens/image-removebg-preview.png" style="height: 7vh;"></div>
+    </header>
+    <main>
+        <p class="SiteNome"><a target="_self" class="SiteLink" href="pagina_de_login.html"><b>Login</b></a>   >   Inscrever-se</p>
+        <div class="center">
+            <div id="label"><b>Inscrever-se</b></div>
+            <form action="index.html">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome_pessoa" placeholder="Nome completo" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_pessoa" placeholder="fulano02@mail.tal" required>
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco_pessoa" placeholder="Endereço" required>
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo_pessoa">
+                    <option value="" disabled selected>Sexo</option>
+                    <option value="MAcho">Masculino</option>
+                    <option value="Femea">Feminino</option>
+                    <option value="Seila">Prefiro Não dizer</option>
+                </select>
+                <label for="date">Data</label>
+                <input id="date" type="date" name="data_pessoa" max="2010-12-05" required/>
+                <label for="CPF">CPF</label>
+                <input type="text" id="CPF" name="CPF_pessoa" maxlength="14" OnKeyPress="formatar('###.###.###-##',this)" placeholder="CPF">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha_pessoa" minlength="8" placeholder="Senha"  required />
+                <label for="Confirmarsenha">Confirmar senha</label>
+                <input type="password" id="Confirmarsenha" name="Confirmarsenha" minlength="8" placeholder="Confirmar Senha" required />
+                <button type="submit" class="butao butoa">Inscrever-se</button>
+        </form>
+    </main><br><br><br>
+    <footer class="site-footer"><br><br>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/twttr_logo.png" ><p>Twitter</p></a>
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/insta_logo.png"><p>Instagram</p></i></a>
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/facebook_logo.png"><p>Facebook</p></a>
+            <a href="#" target="_blank" class="social-icon"><img src="static/imagens/gitHub.png"><p>GitHub</p></a>
+    </footer>
+    <h6>Direitos autorais © a ninguém que se interessaria</h6>
+
+<script src="javascript/SobreNós.js"></script>
+</body>
+</html>

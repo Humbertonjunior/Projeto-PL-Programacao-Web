@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL</title>
+    <link rel="shortcut icon" href="static/imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('index_css', filename='index.css') }}">
+
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="logo"><a href="index.html"><img src="static/imagens/logo.png" style="height: 7vh;"></a>PL - Ocorrências</div>
+        <nav class="nav-links">
+            <a href="Registrar.html">Registrar Ocorrência</a>
+            <a href="listar-ocorrencia.html">Listar Ocorrências</a>
+            <a href="#">Acompanhar Ocorrências</a>
+            <a href="#">Sobre Nós</a>
+        </nav>
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <select id="menuOptions" onchange="location = this.value;">
+                    <option value="" selected disabled>Escolha uma opção</option>
+                    <option value="profie.html">Perfil</option>
+                    <option value="login.html">Login</option>
+                    <option value="Registrar.html">Inscrever-se</option>
+                    <option value="index.html">Sair</option>
+                </select>
+            </div>
+        <div class="login-button"><a href="profie.html"><img src="static/imagens/image-removebg-preview.png" style="height: 7vh;"></a></div>
+    </header>
+    
+<div class="container">
+  <button class="arrow-left control" aria-label="Previous image">◀</button>
+  <button class="arrow-right control" aria-label="Next Image">▶</button>
+  <div class="gallery-wrapper">
+    <div class="gallery">
+      <img src="static/imagens/paisagem-urbana-de-rua-encruzilhada-semaforos_107791-373.jpg" alt="Beach Image" class="item current-item">
+      <img src="static/imagens/cena-do-parque-vazio-com-vista-para-a-cidade_1308-32129.jpg" alt="Animal Image" class="item current-item">
+      <img src="static/imagens/paisagem-urbana-de-rua-encruzilhada-semaforos_107791-373.jpg" alt="Street Image" class="item current-item">
+      <img src="static/imagens/cena-do-parque-vazio-com-vista-para-a-cidade_1308-32129.jpg" alt="Zoo Image" class="item current-item">
+      <img src="static/imagens/paisagem-urbana-de-rua-encruzilhada-semaforos_107791-373.jpg" alt="Model Image" class="item current-item">
+    </div>
+  </div>
+</div>
+<h1 class="greetings">Bem vindo PessoaX, aqui se faz Cidadania !</h1>
+<div class="box-1">
+    <div class="image-1">
+        <img src="static/imagens/megafone.png" alt="">
+    </div>
+    <div class="text-1">
+        <h2>O ato de registrar ocorrências de falhas na cidade desempenha um papel vital na busca por melhorias urbanas !</h2>
+        <h3><br>
+            Essa prática não apenas identifica problemas imediatos, como buracos e vazamentos, mas também permite análises de padrões, facilitando a implementação de estratégias preventivas. A transparência e participação cidadã são fomentadas, conectando a comunidade às decisões locais e promovendo uma cidade mais adaptada às suas necessidades.<br><br> A utilização de plataformas digitais agiliza o processo, tornando-o mais eficiente. 
+        </h3>
+    </div>
+</div>
+
+<div class="registrar-button">
+    <button class="buttonRegister">Registrar Ocorrência</button>
+</div>
+
+<div class="box-2">
+    <div class="image-2">
+        <img src="static/imagens/casal.png" alt="">
+    </div>
+    <div class="text-2">
+        <h2>A plataforma "PL - Registro de Ocorrências" é essencial para documentar e gerenciar eficientemente falhas urbanas &#x26a0;</h2>
+        <h3><br>
+            Ao proporcionar um sistema de registro online, facilita a comunicação direta entre cidadãos e autoridades, agilizando a identificação e correção de problemas nas infraestruturas urbanas.<br><br><br> <h3 class="contador"> 1003 Ocorrências Registradas </h3>
+        </h3>
+    </div>
+</div>
+<div class="arrow-top"><a href="#top" class="arrow"><img src="static/imagens/arrow.svg" class="arrow"></a></div>
+
+<footer class="site-footer">
+    <div class="social-icons">
+        <a href="#" target="_blank" class="social-icon"><img src="static/imagens/twttr_logo.png" ><p>Twitter</p></a>
+        <a href="#" target="_blank" class="social-icon"><img src="static/imagens/insta_logo.png"><p>Instagram</p></i></a>
+        <a href="#" target="_blank" class="social-icon"><img src="static/imagens/facebook_logo.png"><p>Facebook</p></a>
+        <a href="#" target="_blank" class="social-icon"><img src="static/imagens/gitHub.png"><p>GitHub</p></a>
+    </div>
+</footer>
+    <script src=static/javascript/script.js"></script>
+</body>
+</html>
